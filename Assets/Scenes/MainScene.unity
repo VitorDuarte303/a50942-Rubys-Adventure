@@ -3234,6 +3234,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3735732900391729559, guid: e027b905b56fa479d891985cba95abd4, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3735732900391729562, guid: e027b905b56fa479d891985cba95abd4, type: 3}
       propertyPath: m_Name
       value: Ruby

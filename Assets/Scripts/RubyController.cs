@@ -9,8 +9,8 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
 
-    int currentHealth;
     public int health { get { return currentHealth; } }
+    int currentHealth;
 
     bool isInvincible;
     float invincibleTimer;
@@ -23,7 +23,6 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-
         currentHealth = maxHealth;
     }
 
@@ -44,8 +43,8 @@ public class RubyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
     }

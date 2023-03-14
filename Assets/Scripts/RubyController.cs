@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    public float speed = 0.3f;
+    public float speed = 3.0f;
 
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
@@ -14,7 +14,7 @@ public class RubyController : MonoBehaviour
 
     bool isInvincible;
     float invincibleTimer;
-    
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -32,7 +32,7 @@ public class RubyController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        if(isInvincible)
+        if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
@@ -51,7 +51,7 @@ public class RubyController : MonoBehaviour
 
     public void ChangeHealth(int amount)
     {
-        if(amount < 0)
+        if (amount < 0)
         {
             if (isInvincible)
                 return;

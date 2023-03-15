@@ -149,6 +149,7 @@ MonoBehaviour:
   speed: 1
   vertical: 0
   changeTime: 3
+  smokeEffect: {fileID: 7437826474565179965}
 --- !u!95 &3090202415713219814
 Animator:
   serializedVersion: 5
@@ -224,10 +225,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 153761723967253715, guid: 1d49a7dec12184d7c8ef1411a93499a7, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d49a7dec12184d7c8ef1411a93499a7, type: 3}
 --- !u!4 &7437826474565179964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 153761723967253714, guid: 1d49a7dec12184d7c8ef1411a93499a7, type: 3}
+  m_PrefabInstance: {fileID: 7285191131810936558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7437826474565179965 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 153761723967253715, guid: 1d49a7dec12184d7c8ef1411a93499a7, type: 3}
   m_PrefabInstance: {fileID: 7285191131810936558}
   m_PrefabAsset: {fileID: 0}

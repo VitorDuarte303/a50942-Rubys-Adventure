@@ -11163,6 +11163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1768997563, guid: aec14a815d1784cd888e80d1cc31733f, type: 3}
+      propertyPath: collectedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
     - target: {fileID: 968148577912179450, guid: aec14a815d1784cd888e80d1cc31733f, type: 3}
       propertyPath: m_RootOrder
       value: 8

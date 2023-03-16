@@ -26,6 +26,10 @@ public class RubyController : MonoBehaviour
 
     AudioSource audioSource;
 
+    public AudioClip cogThrow;
+
+    public AudioClip HitbyEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,8 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
 
         audioSource = GetComponent<AudioSource>();
+
+
     }
 
     // Update is called once per frame
@@ -99,6 +105,8 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
+
+            audioSource.PlayOneShot(HitbyEnemy);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -114,6 +122,8 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        audioSource.PlayOneShot(cogThrow);
     }
 
     public void PlaySound(AudioClip clip)
